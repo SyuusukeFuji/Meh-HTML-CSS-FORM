@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Fill this form to help us improve!</p>
+
+<div>
+<form id="survey-form" method="post" action:"">
+  <label id="name-label" for="name">Name:<input type="text" id="name" required placeholder="Fill with your name"/>
+  <label id="email-label" for="email">Email:<input type="email" id="email" required placeholder="Fill with your email"/></label>
+  <label id="number-label" for="number">Age:<input type="number" id="number" min="16" max="120" placeholder="Age here"/></label>
+  <label for="dropdown">What option describes you better?<select name="Options" id="dropdown"> 
+    <option value="">Options</option>
+    <option value="Gamer">Gamer</option><option value="Tester">Tester</option>
+    </select></label>
+
+    <label>What device you use to visit us?:</label>
+    <label><input type="radio" value="pc" name="where" class="inline"/>PC</label>
+    <label><input type= "radio" value="smartphone" name="where" class="inline"/>Smartphone/tablet</label>
+    <label class="labelsize">Continent:
+      <label><input type="checkbox" id="na" value="north america" class="inline"/>North America</label>
+      <label><input type="checkbox" id="ca" value="central america" class="inline"/>Central America</label>
+      <label><input type="checkbox" id="sa" value="south america" class="inline"/>South America</label>
+      <label><input type="checkbox" id="eu" value="europa" class="inline"/>Europe</label>
+      <label><input type="checkbox" id="af" value="africa" class="inline"/>Africa</label>
+      <label><input type="checkbox" id="asoc" value="asia and oceania" class="inline"/>Asia & Oceania</label>
+      </label>
+    <label>Other comments:<textarea placeholder="..."></textarea> </label>
+
+    <input type="submit" id="submit"/>
+
+
+</form>
+
+</div>
+
+
+  </body>
+
+
+</html>
